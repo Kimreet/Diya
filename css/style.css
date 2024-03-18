@@ -1,0 +1,223 @@
+body {
+    font-family: "Inter", sans-serif;
+    color:#212121;
+    font-weight: 400;
+}
+dl,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color:#222222;
+}
+.flex{
+    display: flex;
+   
+}
+.space{
+    justify-content: space-between;
+}
+.center{
+    align-items: center;
+}
+.column{
+    flex-direction: column;
+}
+.label2{
+  font-family: 'Satoshi';
+font-size: 12px;
+font-weight: 900;
+line-height: 16px;
+letter-spacing: 3px;
+}
+.grey{
+    color:#B9B9B9;
+}
+.green{
+    color:#7A9D69;
+}
+.label1{
+font-family: 'Satoshi';
+font-size: 16px;
+font-weight: 900;
+line-height: 20px;
+letter-spacing: 0.16em;
+color:#4DCC9C;
+}
+.statement2{
+font-size: 24px;
+line-height: 31px;
+letter-spacing: -0.03em;
+color:#CED9D5
+}
+.custom-button a {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #034A2F;
+    padding:14px 20px;
+    font-family: 'Satoshi';
+font-size: 12px;
+font-weight: 700;
+line-height: 12px;
+letter-spacing: 0.26em;
+color:#034A2F;
+}
+/* header starts */
+.nav-list li a{
+    font-family: "Instrument Sans", sans-serif;
+font-size: 14px;
+line-height: 15px;
+letter-spacing: 0.05em;
+color:#555555;
+}
+.inner-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-list li a:hover{
+    color:#034A2F;
+    text-decoration: underline;
+}
+.coloured {
+    background-color: #034A2F;  
+}
+.coloured a{
+    font-family: 'GeneralSans';
+font-size: 12px;
+font-weight: 600;
+line-height: 12px;
+letter-spacing: 0.26em;
+color:#fff;
+}
+.nav-list{
+    column-gap: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20.5px;
+}
+/* header ends */
+/* banner starts */
+.banner-top h1{
+/* font-size: 266px;
+line-height: 279px;
+letter-spacing: -0.03em; */
+
+font-size: 144px;
+font-weight: 400;
+line-height: 151px;
+letter-spacing: -0.03em;
+}
+h2{
+font-size: 96px;
+line-height: 96px;
+letter-spacing: -0.07em;
+color:#90B180;
+}
+.inner-banner{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    row-gap: 158px;
+    margin: 63px 0;
+}
+.banner-top{ 
+    display: flex;
+    flex-direction: column; 
+    row-gap: 42px;
+}
+.banner-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bb-left p{
+font-family: "Instrument Sans", sans-serif;;
+font-size: 18px;
+line-height: 27px;
+letter-spacing: 0.02em;
+color:#656565;
+max-width: 53ch;
+}
+.bb-left{
+    display: flex;
+    flex-direction: column; 
+    row-gap: 40px;
+}
+.bannertext2{
+    display: flex;
+    position: relative;
+    column-gap: 12rem;
+}
+.bannerimg{
+    position: absolute;
+    width: 140px;
+    height: 70px;
+    left: 433px;
+    top: 20px;
+}
+.bannerimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* banner ends */
+/* segment starts */
+.ellipse{
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background: #7A9D69;
+    padding: 3px;
+}
+.segment-in{
+    background-color:#D3E4CB;
+}
+.segment-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 82px;
+    padding:23px 0;
+}
+.sr-bottom a{
+ font-family: 'Satoshi';
+font-size: 15px;
+font-weight: 700;
+line-height: 18px;
+letter-spacing: 0.09em;
+color:#FFFFFF;
+text-decoration: underline;
+}
+.sr-top{
+    max-width: 45ch;
+}
+.silent-in{
+    padding-top: 151px;
+    padding-bottom: 182px;
+}
+.silent-right{
+    row-gap: 112px;
+}
+/* segment ends */
