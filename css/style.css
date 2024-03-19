@@ -25,19 +25,12 @@ a {
     text-decoration: none;
     color:#222222;
 }
-.flex{
-    display: flex;
-   
+
+
+.paddy{
+    padding-top: 150px;
 }
-.space{
-    justify-content: space-between;
-}
-.center{
-    align-items: center;
-}
-.column{
-    flex-direction: column;
-}
+
 .label2{
   font-family: 'Satoshi';
 font-size: 12px;
@@ -59,6 +52,14 @@ line-height: 20px;
 letter-spacing: 0.16em;
 color:#4DCC9C;
 }
+.label2{
+ font-family: 'Satoshi';
+font-size: 12px;
+font-weight: 900;
+line-height: 15.6px;
+letter-spacing: 3px;
+color:#A59F8F;
+}
 .statement2{
 font-size: 24px;
 line-height: 31px;
@@ -78,6 +79,17 @@ letter-spacing: 0.26em;
 color:#034A2F;
 }
 /* header starts */
+.navigation{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+     transform: translateY(-100%);
+  transition: transform 0.5s ease;  
+  z-index:99999
+  
+  
+}
 .nav-list li a{
     font-family: "Instrument Sans", sans-serif;
 font-size: 14px;
@@ -119,69 +131,108 @@ color:#fff;
 }
 /* header ends */
 /* banner starts */
-.banner-top h1{
-/* font-size: 266px;
-line-height: 279px;
-letter-spacing: -0.03em; */
 
-font-size: 144px;
+
+
+
+.bannertext h1{
+font-size: 266px;
+line-height: 279px;
+letter-spacing: -0.03em;
+
+/* font-size: 144px;
 font-weight: 400;
 line-height: 151px;
-letter-spacing: -0.03em;
+letter-spacing: -0.03em; */
 }
-h2{
-font-size: 96px;
+.bannertext2{
+    overflow: hidden;
+    font-size: 96px;
 line-height: 96px;
 letter-spacing: -0.07em;
 color:#90B180;
+}
+.text1 {
+    transform: translateX(-400px);
+    transition: transform 0.5s ease;  
+}
+.text2{
+    transform: translateX(550px);
+    transition: transform 0.5s ease;  
+}
+.banner-in{
+    position: relative; 
+    
 }
 .inner-banner{ 
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
     row-gap: 158px;
-    margin: 63px 0;
+     padding: 63px 0; 
+    
+}
+.bannertext{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
 }
 .banner-top{ 
     display: flex;
     flex-direction: column; 
     row-gap: 42px;
+    padding-top: 20px;
 }
 .banner-bottom{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    overflow: hidden;
 }
 .bb-left p{
-font-family: "Instrument Sans", sans-serif;;
+font-family: "Instrument Sans", sans-serif;
 font-size: 18px;
 line-height: 27px;
 letter-spacing: 0.02em;
 color:#656565;
 max-width: 53ch;
+
 }
 .bb-left{
     display: flex;
     flex-direction: column; 
     row-gap: 40px;
+    transform: translateY(140px);
+  transition: transform 0.5s ease;  
+}
+.bb-right{
+    transform: translateY(140px);
+  transition: transform 0.5s ease; 
 }
 .bannertext2{
     display: flex;
-    position: relative;
     column-gap: 12rem;
+    padding-top: 151px;
 }
 .bannerimg{
     position: absolute;
     width: 140px;
     height: 70px;
-    left: 433px;
-    top: 20px;
+    left: 625px;
+    top: 253px;
 }
 .bannerimg img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: top;
 }
+
+
+
+
+
 /* banner ends */
 /* segment starts */
 .ellipse{
@@ -214,10 +265,55 @@ text-decoration: underline;
     max-width: 45ch;
 }
 .silent-in{
+    display: flex;
+    justify-content: space-between;
     padding-top: 151px;
     padding-bottom: 182px;
 }
 .silent-right{
+    display: flex;
+    flex-direction: column;
     row-gap: 112px;
 }
 /* segment ends */
+/* accomplishment starts */
+.acctop{
+font-size: 69.71px;
+font-weight: 400;
+line-height: 73.19px;
+letter-spacing: 0.01em;
+color:#034A2F;
+text-align: center;
+}
+.acctop span{
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 35.7px;
+    letter-spacing: 0.01em;
+}
+.accbottom{
+font-family: "Instrument Sans", sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 22.56px;
+letter-spacing: 0.02em;
+text-align: center;
+color:#034A2F;
+}
+.accomplishment-in{
+    background: #F4F2EC;
+}
+.inner-acc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 81px;
+    padding: 60px 0;
+}
+.acc-bottom{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   column-gap: 120px;
+}
+/* accomplishment ends */
