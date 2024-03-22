@@ -33,13 +33,6 @@ a:hover{
     padding-top: 150px;
 }
 
-.label2{
-  font-family: 'Satoshi';
-font-size: 12px;
-font-weight: 900;
-line-height: 16px;
-letter-spacing: 3px;
-}
 .grey{
     color:#B9B9B9;
 }
@@ -61,6 +54,12 @@ font-weight: 900;
 line-height: 15.6px;
 letter-spacing: 3px;
 color:#A59F8F;
+}
+.label3{
+font-size: 10px;
+font-weight: 600;
+line-height: 10.4px;
+letter-spacing: 0.1em;
 }
 .statement1{
 font-size: 26px;
@@ -98,6 +97,12 @@ font-weight: 400;
 line-height: 28.6px;
 letter-spacing: -0.01em;
 }
+h4{
+/* font-family: Gambarino; */
+font-size: 24px;
+font-weight: 400;
+line-height: 24.96px;
+}
 .bodyp{
     font-family: "Instrument Sans", sans-serif;
 font-size: 16px;
@@ -105,6 +110,13 @@ font-weight: 400;
 line-height: 22.56px;
 letter-spacing: 0.02em;
 max-width: 30ch;
+}
+.link{
+font-size: 12px;
+font-weight: 600;
+line-height: 12.48px;
+letter-spacing: 0.27em;
+color:#034A2F
 }
 /* header starts */
 .navigation{
@@ -589,6 +601,27 @@ column-gap: 270px;
     align-items: center;
     justify-content: center;
 }
+.story:hover{
+    background: #034A2F;
+}
+.story:hover .story-content h3 {
+    color: #fff;
+}
+.story:hover .story-content p{
+    color: #fff;
+}
+.story:hover .story-bottom-left {
+    color: #98B2A9;
+}
+.story:hover  .story-bottom-right{
+    color: #98B2A9;
+}
+.story:hover .link-arrow{
+    background-color: #fff;
+}
+.story:hover .link-arrow img{
+    filter: brightness(0);
+}
 /* stories ends */
 /* Blog Page starts */
 .blog-top{
@@ -599,4 +632,70 @@ column-gap: 270px;
 .blog-top-left{
     max-width: 41ch;
 }
+.blog1{
+    display: inline-flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+.blogimg{
+    /* width: 404px; */
+    height: 205px;
+}
+.blogimg img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+.blog1-bottom{
+    height: calc(100% - 205px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.blog-content p{
+    color:#8B8B8B;
+    max-width: 33ch;
+}
+.blog-label{
+    margin: 22px 0;
+}
+.bloghead{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    row-gap: 16px;
+    height: 100%;
+}
+.blog-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 33px;
+}
+.blog-bottom{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    column-gap: 22px;
+}
+.inner-blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 70px;
+}
 /* Blog Page Ends */
+/* faq page starts */
+.faqimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.faq-left{
+    width: 40%;
+    min-height: 100vh;
+    position: relative;
+}
+/* faq page ends */
